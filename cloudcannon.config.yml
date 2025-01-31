@@ -1,5 +1,5 @@
 _schema: _schema
-source: .
+source: /src/
 paths:
   uploads: uploads
   static: ''
@@ -10,11 +10,11 @@ collections_config:
     name:
     singular_name:
     icon: notes
-    url: http://localhost:3000/posts
+    url:
     disable_url: false
     include_developer_files:
     documentation:
-    description:
+    description: ''
     preview:
     sort:
     sort_options:
@@ -69,6 +69,35 @@ collections_config:
     new_preview_url:
     schemas:
     schema_key:
+  pages:
+    path:
+    glob:
+    name:
+    singular_name:
+    icon: notes
+    url:
+    disable_url: false
+    include_developer_files:
+    documentation:
+    description:
+    preview:
+    sort:
+    sort_options:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
+editor:
+  default_path:
 source_editor:
   tab_size: 2
   theme: monokai
