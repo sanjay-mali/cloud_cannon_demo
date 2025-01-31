@@ -5,18 +5,18 @@ paths:
   static: ''
 collections_config:
   posts:
-    path:
-    glob: []
-    name:
-    singular_name:
+    path: _posts
+    glob: ["**/*.md"]
+    name: Blog Posts
+    singular_name: Blog Post
     icon: notes
-    url:
+    url: /blog/:title/
     disable_url: false
-    include_developer_files:
+    include_developer_files: false
     documentation:
-    description: ''
+    description: 'Collection of blog posts'
     preview:
-    sort:
+    sort: date
     sort_options:
     _editables:
       block:
@@ -25,111 +25,110 @@ collections_config:
         blockquote: true
         bold: true
         bulletedlist: true
-        center:
+        center: true
         code: true
         copyformatting: true
         embed: true
         expandable: true
-        format:
-        height:
-        horizontalrule:
+        format: true
+        height: true
+        horizontalrule: true
         image: true
         image_size_attributes: true
-        indent:
+        indent: true
         italic: true
-        justify:
-        left:
+        justify: true
+        left: true
         link: true
-        mime_type:
+        mime_type: true
         numberedlist: true
         outdent: true
-        paths:
+        paths: true
         redo: true
         removeformat: true
         resize_style: cover
-        right:
-        snippet:
-        strike:
-        styles:
+        right: true
+        snippet: true
+        strike: true
+        styles: true
         subscript: true
         superscript: true
         table: true
         underline: true
         undo: true
-        width:
+        width: true
     _enabled_editors:
     _inputs:
     _select_data:
     _structures:
     add_options:
-    create:
+    create: true
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
     new_preview_url:
     schemas:
       blogs:
-        path:
+        path: _posts
         reorder_inputs: true
         hide_extra_inputs: false
         remove_empty_inputs: false
         remove_extra_inputs: true
-        name: Blogggg
+        name: Blog
         icon: notes
         preview:
-          text:
-          subtext:
-          icon:
-          icon_color:
+          text: title
+          subtext: date
+          icon: notes
+          icon_color: blue
           image:
           metadata:
           gallery:
         _editables:
           block:
-            allow_custom_markup: false
+            allow_custom_markup: true
             remove_custom_markup: false
-            blockquote:
+            blockquote: true
             bold: true
-            bulletedlist:
-            center:
-            code:
-            copyformatting:
-            embed:
-            expandable:
-            format:
-            height:
-            horizontalrule:
-            image:
+            bulletedlist: true
+            center: true
+            code: true
+            copyformatting: true
+            embed: true
+            expandable: true
+            format: true
+            height: true
+            horizontalrule: true
+            image: true
             image_size_attributes: true
-            indent:
-            italic:
-            justify:
-            left:
-            link:
-            mime_type:
-            numberedlist:
-            outdent:
-            paths:
-            redo:
-            removeformat:
-            resize_style:
-            right:
-            snippet:
-            strike:
-            styles:
-            subscript:
-            superscript:
+            indent: true
+            italic: true
+            justify: true
+            left: true
+            link: true
+            mime_type: true
+            numberedlist: true
+            outdent: true
+            paths: true
+            redo: true
+            removeformat: true
+            resize_style: cover
+            right: true
+            snippet: true
+            strike: true
+            styles: true
+            subscript: true
+            superscript: true
             table: true
-            underline:
-            undo:
-            width:
+            underline: true
+            undo: true
+            width: true
         _enabled_editors:
         _inputs:
         _select_data:
         _structures:
-        create:
+        create: true
         new_preview_url:
-    schema_key:
   pages:
     path:
     glob:
