@@ -15,6 +15,9 @@ collections_config:
     _enabled_editors:
       - content
       - data
+  data:
+    path: data
+    output: false
 _inputs:
   large_header:
     comment: Toggles the size of the top banner.
