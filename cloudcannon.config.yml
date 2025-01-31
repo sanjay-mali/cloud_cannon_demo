@@ -1,4 +1,32 @@
-_schema: _schema
+_schema: 
+  _schema
+  home_page:
+    name: Home Page
+    fields:
+      - name: title
+        type: text
+        label: Title
+      - name: banner_image
+        type: image
+        label: Banner Image
+      - name: content
+        type: markdown
+        label: Content
+  service_page:
+    name: Service Page
+    fields:
+      - name: title
+        type: text
+        label: Title
+      - name: service_description
+        type: textarea
+        label: Service Description
+      - name: service_image
+        type: image
+        label: Service Image
+      - name: content
+        type: markdown
+        label: Content
 paths:
   collections: content
   data: data
@@ -90,13 +118,18 @@ collections_config:
       - data
       - content
     add_options:
-      - name:
-        icon:
-        editor:
-        base_path:
-        collection:
-        schema:
-        default_content_file:
+      - name: Home Page
+        icon: home
+        editor: visual
+        base_path: content/pages
+        collection: webpages
+        schema: home_page
+      - name: Service Page
+        icon: build
+        editor: visual
+        base_path: content/pages
+        collection: webpages
+        schema: service_page
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
@@ -118,6 +151,19 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+collection_groups:
+  pages_group:
+    name: Pages Group
+    collections:
+      - webpages
+  blog_group:
+    name: Blog Group
+    collections:
+      - posts
+  data_group:
+    name: Data Group
+    collections:
+      - data
 _inputs:
   large_header:
     type: auto
