@@ -68,6 +68,67 @@ collections_config:
     disable_file_actions: false
     new_preview_url:
     schemas:
+      blogs:
+        path:
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name: Blogggg
+        icon: notes
+        preview:
+          text:
+          subtext:
+          icon:
+          icon_color:
+          image:
+          metadata:
+          gallery:
+        _editables:
+          block:
+            allow_custom_markup: false
+            remove_custom_markup: false
+            blockquote:
+            bold: true
+            bulletedlist:
+            center:
+            code:
+            copyformatting:
+            embed:
+            expandable:
+            format:
+            height:
+            horizontalrule:
+            image:
+            image_size_attributes: true
+            indent:
+            italic:
+            justify:
+            left:
+            link:
+            mime_type:
+            numberedlist:
+            outdent:
+            paths:
+            redo:
+            removeformat:
+            resize_style:
+            right:
+            snippet:
+            strike:
+            styles:
+            subscript:
+            superscript:
+            table: true
+            underline:
+            undo:
+            width:
+        _enabled_editors:
+        _inputs:
+        _select_data:
+        _structures:
+        create:
+        new_preview_url:
     schema_key:
   pages:
     path:
@@ -79,7 +140,7 @@ collections_config:
     disable_url: false
     include_developer_files:
     documentation:
-    description:
+    description: ''
     preview:
     sort:
     sort_options:
