@@ -10,26 +10,20 @@ interface Post {
   date: string;
 }
 
-async function getPosts(): Promise<Post[]> {
-  const postsDirectory = path.join(process.cwd(), "src/_posts");
-  const filenames = fs.readdirSync(postsDirectory);
 
-  const posts = filenames.map((filename) => {
-    const filePath = path.join(postsDirectory, filename);
-    const fileContents = fs.readFileSync(filePath, "utf8");
-    const { data } = matter(fileContents);
-
-    return {
-      slug: filename.replace(/\.md$/, ""),
-      ...data,
-    } as Post;
-  });
-
-  return posts;
-}
 
 export default async function Home() {
-  const posts = await getPosts();
+  // const posts = await getPosts();
+  
+  const posts = [
+    {
+      title: "Hello World",
+      slug: "hello-world",
+      author: "John Doe",
+      date: "2023-10-01"
+    }
+  ];
+
 
   return (
     <div className="max-w-4xl mx-auto p-6 font-sans">

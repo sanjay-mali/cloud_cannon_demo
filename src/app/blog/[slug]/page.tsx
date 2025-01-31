@@ -12,33 +12,33 @@ interface Post {
   content: string;
 }
 
-async function getPost(slug: string): Promise<Post | null> {
-  const postsDirectory = path.join(process.cwd(), 'src/_posts');
-  const filePath = path.join(postsDirectory, `${slug}.md`);
+// async function getPost(slug: string): Promise<Post | null> {
+//   const postsDirectory = path.join(process.cwd(), 'src/_posts');
+//   const filePath = path.join(postsDirectory, `${slug}.md`);
 
-  if (!fs.existsSync(filePath)) {
-    return null;
-  }
+//   if (!fs.existsSync(filePath)) {
+//     return null;
+//   }
 
-  const fileContents = fs.readFileSync(filePath, 'utf8');
-  const { data, content } = matter(fileContents);
+//   const fileContents = fs.readFileSync(filePath, 'utf8');
+//   const { data, content } = matter(fileContents);
 
-  return {
-    ...data,
-    content,
-  } as Post;
-}
+//   return {
+//     ...data,
+//     content,
+//   } as Post;
+// }
 
-export async function generateStaticParams() {
-  const postsDirectory = path.join(process.cwd(), 'src/_posts');
-  const filenames = fs.readdirSync(postsDirectory);
+// export async function generateStaticParams() {
+//   const postsDirectory = path.join(process.cwd(), 'src/_posts');
+//   const filenames = fs.readdirSync(postsDirectory);
 
-  return filenames.map((filename) => ({
-    params: {
-      slug: filename.replace(/\.md$/, ''),
-    },
-  }));
-}
+//   return filenames.map((filename) => ({
+//     params: {
+//       slug: filename.replace(/\.md$/, ''),
+//     },
+//   }));
+// }
 
 interface Params {
   params: {
@@ -48,10 +48,22 @@ interface Params {
 
 export default async function Post({ params }: Params) {
   const { slug } = params;
-  const post = await getPost(slug);
+  // const post = await getPost(slug);
 
-  if (!post) {
-    notFound();
+  // if (!post) {
+  //   notFound();
+  // }
+
+
+  const post = {
+    title: 'Hello World',
+    author: 'John Doe',
+    date: '2021-10-01',
+    content: `
+      # Hello World
+
+      This is a blog post.
+    `,
   }
 
   return (
