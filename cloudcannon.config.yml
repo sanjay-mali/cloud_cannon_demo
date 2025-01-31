@@ -1,43 +1,160 @@
+_schema: _schema
+paths:
+  collections: content
+  data: data
+  static: public
+  uploads: public/uploads
 collections_config:
   webpages:
     path: content/pages
-    url: "/[slug]"
-    output: true
     name: Pages
     icon: wysiwyg
+    url: /[slug]
+    disable_url: false
+    documentation:
+      url:
+      text:
+      icon:
+    description: ''
+    preview:
+      text:
+      subtext:
+      icon:
+      icon_color:
+      image:
+      metadata:
+      gallery:
+    sort:
+      key:
+      order: ascending
+    sort_options:
+      - key:
+        order: descending
+        label:
+    _editables:
+      text:
+        allow_custom_markup: true
+        remove_custom_markup: false
+        bold: true
+        copyformatting: true
+        italic: true
+        link: true
+        paths:
+        redo: true
+        removeformat: true
+        strike: true
+        subscript: true
+        superscript: true
+        underline: true
+        undo: true
+      block:
+        allow_custom_markup: true
+        remove_custom_markup: true
+        blockquote: true
+        bold: true
+        bulletedlist: true
+        center:
+        code: true
+        copyformatting: true
+        embed: true
+        expandable: true
+        format:
+        height:
+        horizontalrule: true
+        image: true
+        image_size_attributes: true
+        indent: true
+        italic: true
+        justify:
+        left:
+        link: true
+        mime_type:
+        numberedlist: true
+        outdent: true
+        paths:
+        redo: true
+        removeformat: true
+        resize_style:
+        right:
+        snippet: true
+        strike: true
+        styles:
+        subscript: true
+        superscript: true
+        table: true
+        underline: true
+        undo: true
+        width:
     _enabled_editors:
       - visual
       - data
+      - content
+    add_options:
+      - name:
+        icon:
+        editor:
+        base_path:
+        collection:
+        schema:
+        default_content_file:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
   posts:
     path: content/posts
-    url: "/blog/[slug]"
-    output: true
-    format: markdown
+    icon: notes
+    url: /blog/[slug]
+    disable_url: false
     _enabled_editors:
       - content
       - data
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
   data:
     path: data
-    output: false
+    icon: notes
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
 _inputs:
   large_header:
+    type: auto
     comment: Toggles the size of the top banner.
+    cascade: true
   show_in_navigation:
+    type: auto
     comment: Toggles a link in the top banner.
+    cascade: true
   author_staff_member:
+    type: auto
     comment: The staff member writing this post.
+    cascade: true
   call_to_action:
+    type: auto
     comment: Type of request shown at the bottom of this page.
+    cascade: true
   testimonials:
-    comment: "Update, add or remove testimonials."
+    type: auto
+    comment: Update, add or remove testimonials.
+    cascade: true
   phone_extension:
+    type: auto
     comment: The digits after dialing the company phone.
+    cascade: true
   credentials:
+    type: auto
     comment: Shown as subtext on staff member summaries.
+    cascade: true
   contact_email_address:
+    type: auto
     comment: Address for the contact form to send to.
+    cascade: true
   new_window:
+    type: auto
     comment: Whether the link opens a new browser tab/window.
+    cascade: true
 _select_data:
   call_to_actions:
     - Contact
@@ -51,8 +168,4 @@ _select_data:
     - Twitter
     - YouTube
     - RSS
-paths:
-  collections: content
-  data: data
-  static: public
-  uploads: public/uploads
+timezone: Etc/UTC
