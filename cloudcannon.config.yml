@@ -5,7 +5,7 @@ paths:
   static: ''
 collections_config:
   posts:
-    path: src/_posts
+    path: /src/_posts
     glob: ["**/*.md"]
     name: Blog Posts
     singular_name: Blog Post
@@ -59,6 +59,9 @@ collections_config:
         width: true
     _enabled_editors:
     _inputs:
+      - name: image
+        label: Image
+        type: image
     _select_data:
     _structures:
     add_options:

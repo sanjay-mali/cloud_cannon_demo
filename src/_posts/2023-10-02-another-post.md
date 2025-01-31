@@ -1,15 +1,17 @@
 ---
-title: "Sample Post"
-date: 2023-10-01
-author: "Your Name"
-image: "/images/sample-post.jpg"
+title: "Another Post"
+date: 2023-10-02
+author: "Another Author"
+image: "/images/another-post.jpg"
 ---
 
-This is a sample blog post for demonstration purposes.
+This is another sample blog post with more content.
 
-# Introduction
+## Introduction
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+![Another Image](/images/another-post.jpg)
 
 ## Main Content
 
