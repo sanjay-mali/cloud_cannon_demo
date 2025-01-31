@@ -68,6 +68,10 @@ collections_config:
     new_preview_url:
     schemas:
     schema_key:
+source_editor:
+  tab_size: 2
+  theme: monokai
+  show_gutter: true
 timezone: Asia/Calcutta
 markdown:
   engine: commonmark
