@@ -11,7 +11,7 @@ interface Post {
 }
 
 async function getPost(slug: string): Promise<Post | null> {
-  const postsDirectory = path.join(process.cwd(), '_posts');
+  const postsDirectory = path.join(process.cwd(), 'src/_posts');
   const filePath = path.join(postsDirectory, `${slug}.md`);
 
   if (!fs.existsSync(filePath)) {
