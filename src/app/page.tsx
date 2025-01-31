@@ -1,16 +1,4 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
 import Link from "next/link";
-
-interface Post {
-  slug: string;
-  title: string;
-  author: string;
-  date: string;
-}
-
-
 
 export default async function Home() {
   // const posts = await getPosts();
