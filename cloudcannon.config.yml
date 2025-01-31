@@ -1,9 +1,13 @@
-_schema: _schema
-source: /src/
-paths:
-  uploads: uploads
-  static: ''
 collections_config:
+  webpages:
+    path: content/pages
+    url: '/[slug]'
+    output: true
+    name: Pages
+    icon: wysiwyg
+    _enabled_editors:
+      - visual
+      - data
   posts:
     path: content/posts
     url: '/blog/[slug]'
