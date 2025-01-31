@@ -12,6 +12,7 @@ collections_config:
     path: content/posts
     url: "/blog/[slug]"
     output: true
+    format: markdown
     _enabled_editors:
       - content
       - data
