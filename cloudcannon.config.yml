@@ -1,4 +1,5 @@
 _schema: _schema
+source: .
 paths:
   uploads: uploads
   static: ''
