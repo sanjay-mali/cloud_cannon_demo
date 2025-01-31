@@ -11,13 +11,17 @@ collections_config:
     schemas:
       default:
         path: .cloudcannon/schemas/home.md
-        name: Newsletter Entry
-      events:
+        name: Home Page
+      service:
+        path: .cloudcannon/schemas/service.md
+        name: Service Page
   posts:
     path: content/posts
     icon: notes
     url: /blog/[slug]
     disable_url: false
+    output: true
+    name: Blog Posts
     _enabled_editors:
       - content
       - data
