@@ -1,0 +1,185 @@
+_schema: _schema
+source: /src/
+paths:
+  uploads: uploads
+  static: ''
+collections_config:
+  posts:
+    path:
+    glob: []
+    name:
+    singular_name:
+    icon: notes
+    url:
+    disable_url: false
+    include_developer_files:
+    documentation:
+    description: ''
+    preview:
+    sort:
+    sort_options:
+    _editables:
+      block:
+        allow_custom_markup: true
+        remove_custom_markup: false
+        blockquote: true
+        bold: true
+        bulletedlist: true
+        center:
+        code: true
+        copyformatting: true
+        embed: true
+        expandable: true
+        format:
+        height:
+        horizontalrule:
+        image: true
+        image_size_attributes: true
+        indent:
+        italic: true
+        justify:
+        left:
+        link: true
+        mime_type:
+        numberedlist: true
+        outdent: true
+        paths:
+        redo: true
+        removeformat: true
+        resize_style: cover
+        right:
+        snippet:
+        strike:
+        styles:
+        subscript: true
+        superscript: true
+        table: true
+        underline: true
+        undo: true
+        width:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+      blogs:
+        path:
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name: Blogggg
+        icon: notes
+        preview:
+          text:
+          subtext:
+          icon:
+          icon_color:
+          image:
+          metadata:
+          gallery:
+        _editables:
+          block:
+            allow_custom_markup: false
+            remove_custom_markup: false
+            blockquote:
+            bold: true
+            bulletedlist:
+            center:
+            code:
+            copyformatting:
+            embed:
+            expandable:
+            format:
+            height:
+            horizontalrule:
+            image:
+            image_size_attributes: true
+            indent:
+            italic:
+            justify:
+            left:
+            link:
+            mime_type:
+            numberedlist:
+            outdent:
+            paths:
+            redo:
+            removeformat:
+            resize_style:
+            right:
+            snippet:
+            strike:
+            styles:
+            subscript:
+            superscript:
+            table: true
+            underline:
+            undo:
+            width:
+        _enabled_editors:
+        _inputs:
+        _select_data:
+        _structures:
+        create:
+        new_preview_url:
+    schema_key:
+  pages:
+    path:
+    glob:
+    name:
+    singular_name:
+    icon: notes
+    url:
+    disable_url: false
+    include_developer_files:
+    documentation:
+    description: ''
+    preview:
+    sort:
+    sort_options:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
+editor:
+  default_path:
+source_editor:
+  tab_size: 2
+  theme: monokai
+  show_gutter: true
+timezone: Asia/Calcutta
+markdown:
+  engine: commonmark
+  options:
+    xhtml: false
+    breaks: false
+    linkify: false
+    typographer: false
+    spaced_lists: false
+    sentence_per_line: false
+    gfm: false
+    code_block_fences: '```'
+    escape_snippets_in_code_blocks: false
+    treat_indentation_as_code: false
+    table: false
+    strikethrough: false
+    subscript: false
+    superscript: false
+    heading_ids: false
+    attributes: false
